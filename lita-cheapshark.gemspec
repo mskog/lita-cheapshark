@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-cheapshark"
-  spec.version       = "0.1.0"
+  spec.version       = "0.2.0"
   spec.authors       = ["Magnus Skog"]
   spec.email         = ["magnus.m.skog@gmail.com"]
   spec.description   = "A Lita handler that returns the best deal for a game from http://www.cheapshark.com"

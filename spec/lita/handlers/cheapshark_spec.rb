@@ -6,7 +6,7 @@ describe Lita::Handlers::Cheapshark, lita_handler: true do
   describe "#cheapshark" do
     context "with a term with results" do
       before :each do
-        stub_request(:get, "#{described_class::CHEAPSHARK_URL}/games").with(query: {title: 'batman: arkham city'}).to_return(body: JSON.parse(File.read('spec/fixtures/games_batman_arkham_city.json')))
+        stub_request(:get, "#{described_class::CHEAPSHARK_URL}/games").with(query: {title: 'batman: arkham city'}).to_return(body: File.read('spec/fixtures/games_batman_arkham_city.json'))
       end
 
       it "returns the title of the game, the best deal as well as a url to the deal" do
@@ -19,7 +19,7 @@ describe Lita::Handlers::Cheapshark, lita_handler: true do
 
     context "with a term without results" do
       before :each do
-        stub_request(:get, "#{described_class::CHEAPSHARK_URL}/games").with(query: {title: 'foobar'}).to_return(body: [])
+        stub_request(:get, "#{described_class::CHEAPSHARK_URL}/games").with(query: {title: 'foobar'}).to_return(body: "[]")
       end
 
       it "returns a helpful message" do

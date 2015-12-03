@@ -8,7 +8,7 @@ module Lita
 
       def cheapshark(response)
         term = response.matches[0][0]
-        data = connection.get("games", title: term).body
+        data = JSON.parse(connection.get("games", title: term).body)
         response.reply("No deal found for '#{term}'") && return if data.size == 0
         deal = data.first
         response.reply("Cheapest deal for '#{deal['external']}': $#{deal['cheapest']}")

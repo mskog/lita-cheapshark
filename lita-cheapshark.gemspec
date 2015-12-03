@@ -3,10 +3,10 @@ Gem::Specification.new do |spec|
   spec.version       = "0.1.0"
   spec.authors       = ["Magnus Skog"]
   spec.email         = ["magnus.m.skog@gmail.com"]
-  spec.description   = "TODO: Add a description"
-  spec.summary       = "TODO: Add a summary"
-  spec.homepage      = "TODO: Add a homepage"
-  spec.license       = "TODO: Add a license"
+  spec.description   = "A Lita handler that returns the best deal for a game from http://www.cheapshark.com"
+  spec.summary       = "A Lita handler that returns the best deal for a game from http://www.cheapshark.com"
+  spec.homepage      = "https://github.com/mskog/lita-cheapshark"
+  spec.license       = "MIT"
   spec.metadata      = { "lita_plugin_type" => "handler" }
 
   spec.files         = `git ls-files`.split($/)

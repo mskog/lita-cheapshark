@@ -1,0 +1,8 @@
+en:
+  lita:
+    handlers:
+      cheapshark:
+        help:
+          cheapshark_key: cheapshark NAME
+          cheapshark_value: "Find the best deal for game NAME"
+

@@ -1,6 +1,6 @@
 # lita-cheapshark
 
-TODO: Add a description of the plugin.
+[![Circle CI](https://circleci.com/gh/mskog/lita-cheapshark.svg?style=svg)](https://circleci.com/gh/mskog/lita-cheapshark)
 
 **lita-cheapshark** is a [Lita](https://github.com/litaio/lita) handler that returns the best deal for a video game from [Cheapshark](http://www.cheapshark.com)
 
